@@ -1,0 +1,38 @@
+<view >
+  <view class="userinfo">
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.name}}2113</text>
+  </view>
+  <view class='lineBg'/>
+
+  <view class="order">
+      <text class="userinfo-nickname" bindtap='myOrderClick' >{{userInfo.orderName}}</text>
+      <view class="orderRight">
+          <text  class="orderTxt">{{userInfo.allOrder}}</text>
+          <image class="orderImg" src="{{userInfo.rightPic}}" background-size="cover"></image>
+      </view>
+  </view>
+
+  <view  class="itemRoot">
+      <block wx:for="{{itemOne}}" wx:key="index">
+      <view class="itemView">
+          <image class="itemImageView" src="{{item.image}}" background-size="cover"></image>
+          <text  class="itemTextView">{{item.name}}</text>
+      </view>
+      </block>
+  </view>
+
+
+  <view  class="itemRootTwo">
+      <block wx:for="{{itemTwo}}" wx:key="index">
+      <view class="itemView">
+          <image class="itemImageView" src="{{item.image}}" background-size="cover"></image>
+          <text  class="itemTextView">{{item.name}}</text>
+      </view>
+      </block>
+  </view>
+  <view class="buttonRoot">
+      <button class="changeBtn" plain='true' >切换账号</button>
+     
+ </view>
+</view>

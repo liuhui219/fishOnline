@@ -1,0 +1,10 @@
+{
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#fff",
+  "enablePullDownRefresh": false,
+  "navigationBarTitleText": "进货单",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "num": "../../../components/num/num"
+  }
+}

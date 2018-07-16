@@ -1,0 +1,177 @@
+<view class='main'>
+  <view class='pros'>
+    <view class='pro_company'>
+      <text class='text'>海之星</text>
+    </view>
+    <view class='pro_mark'>
+      <view class='pro_img'>
+
+      </view>
+
+      <view class='pro_mark_a'>
+        <view>
+          <text class='text26 titles'>海之星海之星海之星海之星海之星海之星海之星海之星海之星海之星海之星海之星海之星海之星</text>
+        </view>
+        <view class='pro_for'>
+          <view style='flex:1'>
+            <text class='text26 color_777'>规格：</text>
+          </view>
+
+          <view style='flex:1'>
+            <text class='text26 color_777'>等级：</text>
+          </view>
+        </view>
+
+
+        <view class='price'>
+          <view>
+            <text class='text26'>18</text>
+            <text class='text26'>元</text>
+          </view>
+          <view>
+            <text class='text26 color_777'>× 10</text>
+          </view>
+        </view>
+      </view>
+
+    </view>
+
+    <view class='pro_mark'>
+      <view class='pro_img'>
+
+      </view>
+
+      <view class='pro_mark_a'>
+        <view>
+          <text class='text26 titles'>海之星海之星海之星海之星海之星海之星海之星海之星海之星海之星海之星海之星海之星海之星</text>
+        </view>
+        <view class='pro_for'>
+          <view style='flex:1'>
+            <text class='text26 color_777'>规格：</text>
+          </view>
+
+          <view style='flex:1'>
+            <text class='text26 color_777'>等级：</text>
+          </view>
+        </view>
+
+
+        <view class='price'>
+          <view>
+            <text class='text26'>18</text>
+            <text class='text26'>元</text>
+          </view>
+          <view>
+            <text class='text26 color_777'>× 10</text>
+          </view>
+        </view>
+      </view>
+
+    </view>
+    
+    <view class='total'>
+       <view class='total_a'>
+          <text>2种货品</text>
+       </view>
+       <view class='total_b'>
+           <text>总金额(含运费)：</text>
+           <text>2000</text>
+       </view>
+    </view>
+
+    <view class='btn'>
+       <view class='btn_a'>
+           <text>关闭交易</text>
+       </view>
+    </view>
+
+  </view>
+
+  <view class='pros'>
+    <view class='pro_company'>
+      <text class='text'>海之星</text>
+    </view>
+    <view class='pro_mark'>
+      <view class='pro_img'>
+
+      </view>
+
+      <view class='pro_mark_a'>
+        <view>
+          <text class='text26 titles'>海之星海之星海之星海之星海之星海之星海之星海之星海之星海之星海之星海之星海之星海之星</text>
+        </view>
+        <view class='pro_for'>
+          <view style='flex:1'>
+            <text class='text26 color_777'>规格：</text>
+          </view>
+
+          <view style='flex:1'>
+            <text class='text26 color_777'>等级：</text>
+          </view>
+        </view>
+
+
+        <view class='price'>
+          <view>
+            <text class='text26'>18</text>
+            <text class='text26'>元</text>
+          </view>
+          <view>
+            <text class='text26 color_777'>× 10</text>
+          </view>
+        </view>
+      </view>
+
+    </view>
+
+    <view class='pro_mark'>
+      <view class='pro_img'>
+
+      </view>
+
+      <view class='pro_mark_a'>
+        <view>
+          <text class='text26 titles'>海之星海之星海之星海之星海之星海之星海之星海之星海之星海之星海之星海之星海之星海之星</text>
+        </view>
+        <view class='pro_for'>
+          <view style='flex:1'>
+            <text class='text26 color_777'>规格：</text>
+          </view>
+
+          <view style='flex:1'>
+            <text class='text26 color_777'>等级：</text>
+          </view>
+        </view>
+
+
+        <view class='price'>
+          <view>
+            <text class='text26'>18</text>
+            <text class='text26'>元</text>
+          </view>
+          <view>
+            <text class='text26 color_777'>× 10</text>
+          </view>
+        </view>
+      </view>
+
+    </view>
+    
+    <view class='total'>
+       <view class='total_a'>
+          <text>2种货品</text>
+       </view>
+       <view class='total_b'>
+           <text>总金额(含运费)：</text>
+           <text>2000</text>
+       </view>
+    </view>
+
+    <view class='btn'>
+       <view class='btn_a'>
+           <text>关闭交易</text>
+       </view>
+    </view>
+
+  </view>
+</view>

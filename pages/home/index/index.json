@@ -1,0 +1,8 @@
+ 
+{
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#fff",
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "鱼在线",
+  "navigationBarTextStyle": "black"
+}

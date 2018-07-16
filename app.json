@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/home/index/index",
+    "pages/mine/mine",
+    "pages/logs/logs",
+    "pages/home/search/search",
+    "pages/mine/myOrder/myOrder",
+    "pages/home/financial/financialServer/financialServer",
+    "pages/home/financial/applyInput/applyInput",
+    "pages/home/purchase/purchase",
+    "pages/home/sale/sale",
+    "pages/mine/OrderDetail/OrderDetail",
+    "pages/goods/goods/goods",
+    "pages/goods/details/details",
+    "pages/order/index/index",
+    "pages/order/orderSeccess/orderSeccess",
+    "pages/order/sent/sent",
+    "pages/order/receipt/receipt",
+    "pages/my/index/index",
+    "pages/my/order/order",
+    "pages/my/all/all",
+    "pages/my/address/address",
+    "pages/my/add/add"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "鱼在线",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/home/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/goods/goods/goods",
+        "text": "货源"
+      },
+      {
+        "pagePath": "pages/order/index/index",
+        "text": "进货单"
+      },
+      {
+        "pagePath": "pages/my/index/index",
+        "text": "我的"
+      }
+    ]
+  }
+}

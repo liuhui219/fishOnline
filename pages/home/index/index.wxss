@@ -1,0 +1,131 @@
+/**index.wxss**/
+page{
+  height:100%; 
+} 
+image{
+  display: block;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+  
+}
+.search{
+  width:calc(100% - 40rpx);
+  height:70rpx;
+  border-radius: 5rpx;
+  background-color: #fafafa;
+  padding-left: 15rpx;
+  box-sizing:border-box;
+  margin-left: 20rpx;
+  border: 1rpx solid #ddd;
+  display:-webkit-flex;
+  flex-direction: row; 
+  align-items: center;
+}
+.Nav{
+  display: -webkit-flex;
+  flex-direction: row;
+}
+.Nav_list{
+  flex:1;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Nav_img{
+  justify-content: center;
+  align-items: center;
+  width: 160rpx;
+  height:160rpx;
+}
+.text{
+  font-size: 28rpx;
+}
+.pro_list{
+  width:100%;
+  margin-top: 50rpx;
+}
+.pro_title{
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height:80rpx;
+  border-top:1rpx solid #ddd;
+  border-bottom:1rpx solid #ddd;
+}
+.spacing{
+  letter-spacing:4rpx;  
+}
+
+.pro_order{
+  background-color: #fafafa; 
+  width:100%;
+  display: -webkit-flex;
+  flex-direction: row; 
+  flex-wrap:  wrap;
+  justify-content:space-around; 
+}
+.pro_order_list{
+  display: -webkit-flex;  
+  flex-direction:column;
+  width:-webkit-calc(50% - 20rpx);
+  padding-bottom: 30rpx;
+  margin-top: 15rpx; 
+  background-color: #fff;
+}
+
+.pro_order_list:nth-child(odd){
+  margin-left: 7rpx;
+}
+
+.pro_order_list:nth-child(even){
+  margin-right: 7rpx;
+}
+
+.pro_order_list_title{
+  width:100%;
+  display: -webkit-flex;
+  flex-direction: column; 
+}
+.pro_order_list_text{
+  margin-top: 15rpx;
+  padding-left: 10rpx;
+  padding-right: 5rpx;
+  box-sizing:border-box;
+  height:80rpx;
+  overflow : hidden;
+  color: #333;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-height: 40rpx;
+  -webkit-box-orient: vertical;
+}
+.pro_order_list .price_text{
+  width:100%;
+  margin-top: 10rpx;
+  display: -webkit-flex;
+  flex-direction: row; 
+  box-sizing:border-box;
+  padding-left: 5rpx;
+  padding-right: 5rpx;
+}

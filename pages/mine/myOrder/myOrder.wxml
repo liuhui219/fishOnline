@@ -1,0 +1,59 @@
+<!--导航条-->  
+<view class="navbar">  
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>  
+</view>  
+  
+<!--首页-->  
+<view hidden="{{currentTab!==0}}">  
+    <block wx:for="{{companyInfo}}" wx:key="index" >
+        <view class="ItemOuterRoot"  data-index="{{index}}" bindtap='onItemClick'>
+            <view class="topTitle">
+                <text style=' margin-left:20rpx;font-size:24rpx;color:#808080'>{{item.companyName}}</text>
+                <text style=' margin-right:30rpx;font-size:24rpx;color:#FFA500'>{{item.currentState}}</text>
+            </view>
+            <block wx:for="{{item.content}}"  wx:key="index">
+              <view class="InnerItemRootView" >
+                  <image class="orderImg" src="{{userInfo.itemPic}}" background-size="cover"/>
+                  <view class="RightItem">
+                    <text style='font-size:24rpx;color:#808080'>{{item.title}}</text>
+                    <view style="flex-direction:row;">
+                      <text style="font-size:20rpx;color:#808080">规格: {{item.sizeT}}</text>
+                       <text style='margin-left: 30rpx;font-size:20rpx;color:#808080'>等级: {{item.level}}</text>
+                    </view>
+                    <view style='flex-direction: row;display:flex'>
+                      <text style='font-size:24rpx;color:#ff0000'>{{item.price}}</text>
+                      <text style='font-size:24rpx;color:#808080' wx:if="{{item.price - item.price == 0}}">元/斤X{{item.count}}</text>
+                      <text style='font-size:24rpx;color:#808080' wx:else>X{{item.count}}</text>
+                    </view>
+                  </view>
+              </view>
+            </block>
+            <view class="endText">
+              <text style='font-size:24rpx'>{{item.content.length}}种货品</text>
+               <text style='margin-left:20rpx;margin-right:20rpx;font-size:24rpx'>总金额(含运费)：</text>
+              <text wx:if="{{item.totalPrice-item.totalPrice != 0}}" style='color: #ff0000;margin-right:30rpx;font-size:24rpx'>{{item.totalPrice}}</text> 
+              <text wx:else style='color: #FF4500;margin-right:30rpx;font-size:24rpx'>¥{{item.totalPrice}}</text> 
+            </view> 
+             <view wx:if ='{{item.styleType ==1}}' class="buttonStyle" bindtap='closeButton'>
+                <text class='TextButtonStyle'>关闭交易</text>  
+            </view> 
+            <view wx:if='{{item.styleType ==2}}' style='display: flex;flex-wrap: wrap;justify-content: flex-end; flex-direction: row;margin-right: 40rpx;margin-bottom:30rpx'
+            > 
+                <block wx:for="{{showButtonState}}" wx:key="index" >
+                        <text class='TextButtonStyleTwo' data-index="{{index}}" bindtap='textclick'>{{item.name}}</text>  
+                </block>
+            </view>
+            
+        </view>
+    </block>
+</view>  
+  
+<!--搜索-->  
+<view hidden="{{currentTab!==1}}">  
+  tab_02  
+</view>  
+  
+<!--我-->  
+<view hidden="{{currentTab!==2}}">  
+  tab_03  
+</view>  

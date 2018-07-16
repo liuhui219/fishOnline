@@ -1,0 +1,59 @@
+<view class='main'>
+   <view class='userinfo'>
+       <view class='pic'></view>
+       <text class='phone text26'>15525252525</text>
+   </view>
+
+   <view class='orders'>
+      <view class='order_all'>
+         <text class='text'>我的订单</text>
+         <view class='order_all_a' bindtap='orders'>
+             <text class='text color_333'>全部订单</text>
+             <text style='font-size:40rpx;margin-left:20rpx' class='iconfont icon-right color_333'></text>
+         </view>
+      </view>
+      <view class='order_main'>
+         <view class='order_all_b'>
+            <image mode="widthFix" src="../../images/mine_confirm.png" style="width:60rpx;" />
+            <text style='margin-top:15rpx;' class='text26 color_333'>待确定</text>
+         </view>
+         <view class='order_all_b'>
+            <image mode="widthFix" src="../../images/mine_pay.png" style="width:60rpx;" />
+            <text style='margin-top:15rpx;' class='text26 color_333'>待付款</text>
+         </view>
+         <view class='order_all_b'>
+            <image mode="widthFix" src="../../images/mine_deliver.png" style="width:60rpx;" />
+            <text style='margin-top:15rpx;' class='text26 color_333'>待发货</text>
+         </view>
+         <view class='order_all_b'>
+            <image mode="widthFix" src="../../images/mine_receive.png" style="width:60rpx;" />
+            <text style='margin-top:15rpx;' class='text26 color_333'>待收货</text>
+         </view>
+      </view>
+   </view>
+
+   <view class='orders'> 
+      <view class='order_main'>
+         <view class='order_all_b' bindtap='address'>
+            <image mode="widthFix" src="../../images/mine_place.png" style="width:60rpx;" />
+            <text style='margin-top:15rpx;' class='text26 color_333'>收货地址</text>
+         </view>
+         <view class='order_all_b'>
+            <image mode="widthFix" src="../../images/mine_pay.png" style="width:60rpx;" />
+            <text style='margin-top:15rpx;' class='text26 color_333'>服务中心</text>
+         </view>
+         <view class='order_all_b'>
+            <image mode="widthFix" src="../../images/mine_deliver.png" style="width:60rpx;" />
+            <text style='margin-top:15rpx;' class='text26 color_333'>关于我们</text>
+         </view>
+         <view class='order_all_b'>
+            <image mode="widthFix" src="../../images/mine_receive.png" style="width:60rpx;" />
+            <text style='margin-top:15rpx;' class='text26 color_333'>售后政策</text>
+         </view>
+      </view>
+   </view>
+
+   <view class='account'>
+      <text class='text'>切换账号</text>
+   </view>
+</view>

@@ -1,0 +1,93 @@
+<view class='main'>
+  <view class='main_s'>
+    <view class='pays'>
+      <text class='text32'>发票类型</text>
+    </view>
+    <view class='pays' style='margin-top:30rpx'>
+      <radio value="" checked="true" />
+      <text style='margin-left:20rpx' class='text32'>普通发票</text>
+    </view>
+  </view>
+  <view style='height:30rpx;width:100%;background-color:#eee'></view>
+  <view class='main_s'>
+    <view class='pays'>
+      <text class='text32'>发票抬头</text>
+    </view>
+    <view class='ps' style='margin-top:30rpx'>
+      <radio-group class="radio-group" bindchange="radioChange">
+        <label class="radio">
+          <radio value="个人" checked="{{sents}}" />
+          <text style='margin-left:20rpx' class='text32'>个人</text>
+        </label>
+
+        <label class="radio" style='margin-left:40rpx'>
+          <radio value="公司" checked="{{!sents}}" />
+          <text style='margin-left:20rpx' class='text32'>公司</text>
+        </label>
+      </radio-group>
+    </view>
+  </view>
+
+   
+
+  <view class='input' hidden='{{sents}}'>
+    <view class='list'>
+      <text class='text30' style="width:200rpx">公司名称</text>
+      <input class='text30' value="{{company}}" bindinput="bindCompany" placeholder="请输入公司名称" />
+    </view>
+    <view class='list'>
+      <text class='text30' style="width:200rpx">公司税号</text>
+      <input class='text30' type="number" value="{{companyTax}}" bindinput="bindCompanyTax" placeholder="请输入公司税号" />
+    </view>
+
+    <view class='list'>
+      <text class='text30' style="width:200rpx">开户银行</text>
+      <input class='text30' value="{{bank}}" bindinput="bindBank" placeholder="请输入开户银行" />
+    </view>
+
+    <view class='list'>
+      <text class='text30' style="width:200rpx">银行账号</text>
+      <input class='text30' value="{{bankNum}}" bindinput="bindBankNum" placeholder="请输入银行账号" />
+    </view>
+
+    <view class='list'>
+      <text class='text30' style="width:200rpx">公司地址</text>
+      <input class='text30' value="{{address}}" bindinput="bindAddress" placeholder="请输入公司地址" />
+    </view>
+
+    <view class='list'>
+      <text class='text30' style="width:200rpx">公司电话</text>
+      <input class='text30' value="{{phone}}" bindinput="bindPhone" placeholder="请输入公司电话" />
+    </view>
+
+  </view>
+
+  <view style='height:30rpx;width:100%;background-color:#eee'></view>
+  <view class='main_s'>
+    <view class='pays'>
+      <text class='text32'>发票内容</text>
+    </view>
+    <view class='ps' style='margin-top:30rpx'>
+      <radio-group class="radio-group" bindchange="radioChanges">
+        <label class="radio">
+          <radio value="明细" checked="{{cont}}" />
+          <text style='margin-left:20rpx' class='text32'>明细</text>
+        </label>
+
+        <label class="radio" style='margin-left:40rpx'>
+          <radio value="水产食品" checked="{{!cont}}" />
+          <text style='margin-left:20rpx' class='text32'>水产食品</text>
+        </label>
+      </radio-group>
+    </view>
+  </view>
+</view>
+
+<view class='foot' >
+  <view class='foot_a' bindtap='cancel'>
+    <text class='text'>不需要发票</text>
+  </view>
+  <view class='foot_a' bindtap='sure' style='background-color:red'>
+    <text class='text color_fff'>保存</text>
+  </view>
+</view>

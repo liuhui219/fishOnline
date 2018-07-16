@@ -1,0 +1,29 @@
+<view>
+   <view class='list'>
+      <text class='text30' style="width:200rpx">货品名称</text>
+      <input class='text30' value="{{name}}" bindinput="bindName" placeholder="请输入货品名称" />
+   </view>
+   <view class='list'>
+      <text class='text30' style="width:200rpx">货品规格</text>
+      <input class='text30' value="{{format}}" bindinput="bindFormat" placeholder="请输入货品规格" />
+   </view>
+   <view class='list'>
+      <text class='text30' style="width:200rpx">采购数量</text>
+      <input class='text30' value="{{num}}" bindinput="bindNum" placeholder="请输入采购数量" />
+   </view>
+   <view class='list'>
+      <text class='text30' style="width:200rpx">联系人</text>
+      <input class='text30' value="{{contacts}}" bindinput="bindContacts" placeholder="请输入联系人" />
+   </view>
+   <view class='list'>
+      <text class='text30' style="width:200rpx">手机号码</text>
+      <input class='text30' value="{{phone}}" bindinput="bindPhone" type="number" maxlength="11" placeholder="请输入手机号码" />
+   </view>
+
+   <view wx:if="{{Issubmit}}" class='submit' style='background-color: #036EB8;'> 
+      <text class='text32' style='color:#fff'>提交</text>
+   </view>
+   <view wx:else class='submit'>
+      <text class='text32' style='color:#333'>提交</text>
+   </view>
+</view>

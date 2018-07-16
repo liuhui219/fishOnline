@@ -1,0 +1,17 @@
+<!--pages/search/search.wxml-->
+<view class='main'>
+  <view class='search' bindtap="search">
+     <view class='search_icon'>
+        <icon type="search" size="14"/>
+     </view>
+     <view class='search_input'>
+        <input class='text' value="{{inputValue}}" bindinput="bindKeyInput" bindconfirm="submit" placeholder="搜索货源" confirm-type="search" />
+     </view>
+     <view class='search_icon' bindtap="clear" hidden="{{Ishidden}}">
+        <icon type="clear" size="14"/>
+     </view> 
+  </view>
+  <view class='cancel' bindtap="cancel">
+     <text class='text'>取消</text>
+  </view>
+</view>

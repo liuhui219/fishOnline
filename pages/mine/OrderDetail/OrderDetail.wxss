@@ -1,0 +1,71 @@
+.titleText{
+  width:100%;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #f0f0f0;
+  border-top: 1px solid #f0f0f0;
+}
+.locationInfo{
+   display:flex;
+  flex-direction: column;
+  border-bottom: 1px solid #f0f0f0;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  margin-left: 30rpx;
+}
+.companyItemTitle{
+  height: 80rpx;
+   display:flex;
+  flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.itemButtonStyle{
+  width: 150rpx;
+  height: 50rpx;
+  font-size: 20rpx;
+  margin-right: 30rpx;
+}
+.InnerItemRootView{
+  display: flex;
+  flex-direction: row;
+  
+}
+.orderImg{
+  width: 150rpx;
+  height: 150rpx;
+  padding: 20rpx;
+}
+.RightItem{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction:column;
+  padding-top: 22rpx; 
+  padding-bottom: 22rpx;
+  border-bottom: 1px solid #f0f0f0;
+}
+.RightItemEnd{
+   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction:column;
+  padding-top: 22rpx; 
+  padding-bottom: 22rpx;
+}
+.payInfo{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction:column; 
+  margin-left:20rpx;
+  margin-right:30rpx;
+  border-bottom: 1px solid #f0f0f0;
+  border-top: 1px solid #f0f0f0;
+  padding-bottom: 20rpx;
+  padding-top: 20rpx;
+}

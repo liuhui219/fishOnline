@@ -1,0 +1,97 @@
+<!--index.wxml-->
+<view>
+  <view class='search' bindtap="search">
+     <icon type="search" size="14"/>
+     <text style='color:#777;padding-left:20rpx;' class='text'>搜索货源</text>
+  </view>
+  <swiper style="margin-top:20rpx;" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <view wx:for="{{imgUrls}}" wx:key="index">
+      <swiper-item>
+        <image mode="widthFix" src="{{item}}" style="width:100%;" />
+      </swiper-item>
+    </view>
+  </swiper>
+
+  <view class='Nav'>
+    <view class='Nav_list'>
+      <view class='Nav_img'></view>
+      <text class='text'>服务保障</text>
+    </view>
+    <view class='Nav_list' bindtap="financial">
+      <view class='Nav_img'></view>
+      <text class='text'>金融服务</text>
+    </view>
+    <view class='Nav_list' bindtap="purchase">
+      <view class='Nav_img'></view>
+      <text class='text'>我要采购</text>
+    </view>
+    <view class='Nav_list' bindtap="sale">
+      <view class='Nav_img'></view>
+      <text class='text'>我要卖货</text>
+    </view>
+  </view>
+  <view class='pro_list'>
+    <view class='pro_title'>
+      <text class='text spacing'>当季热销</text>
+    </view>
+    <view class='pro_order'>
+      <view class='pro_order_list'>
+        <view style='width:100%;height:400rpx;'>
+          <image mode="aspectFill" style='width:100%;height:400rpx;' src="../../images/a1.jpg" ></image>
+        </view>
+        <view>
+          <text class='text24 pro_order_list_text'>金枪鱼500吨金枪鱼500</text>
+          <view class='price_text'>
+             <text class='text24'>参考价：</text>
+             <text class='text26'>5000元/吨</text>
+          </view>
+        </view>
+      </view>
+
+      <view class='pro_order_list'>
+        <view style='width:100%;height:400rpx;'>
+          <image mode="aspectFill" style='width:100%;height:400rpx;' src="../../images/a1.jpg" ></image>
+        </view>
+        <view class='pro_order_list_title'>
+          <text class='text24 pro_order_list_text'>金枪鱼500吨金枪鱼500吨金枪是否是的范德萨</text>
+          <view class='price_text'>
+             <text class='text24'>参考价：</text>
+             <text class='text26'>5000元/吨</text>
+          </view>
+        </view>
+      </view>
+
+      <view class='pro_order_list'>
+        <view style='width:100%;height:400rpx;'>
+          <image mode="aspectFill" style='width:100%;height:400rpx;' src="../../images/a1.jpg" ></image>
+        </view>
+        <view class='pro_order_list_title'>
+          <text class='text24 pro_order_list_text'>金枪鱼500吨金枪鱼500吨金枪是否是的范德萨</text>
+          <view class='price_text'>
+             <text class='text24'>参考价：</text>
+             <text class='text26'>5000元/吨</text>
+          </view>
+        </view>
+      </view>
+
+      <view class='pro_order_list'>
+        <view style='width:100%;height:400rpx;'>
+          <image mode="aspectFill" style='width:100%;height:400rpx;' src="../../images/a1.jpg" ></image>
+        </view>
+        <view class='pro_order_list_title'>
+          <text class='text24 pro_order_list_text'>金枪鱼500吨金枪鱼500吨金枪是否是的范德萨</text>
+          <view class='price_text'>
+             <text class='text24'>参考价：</text>
+             <text class='text26'>5000元/吨</text>
+          </view>
+        </view>
+      </view>
+ 
+
+      
+
+       
+
+    </view>
+  </view>
+</view>

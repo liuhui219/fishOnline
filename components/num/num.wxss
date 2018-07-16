@@ -1,0 +1,35 @@
+/* components/num/num.wxss */
+.nums{
+  display:-webkit-flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 1rpx solid #ddd;
+  border-radius: 8rpx;
+  height:50rpx;
+}
+.add{
+  display:-webkit-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 60rpx;
+  border-left:1rpx solid #ddd;
+}
+
+.remove{
+  display:-webkit-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 60rpx;
+  border-right:1rpx solid #ddd;
+}
+
+.input{
+  width:80rpx;
+}
+
+.text{
+  font-size: 26rpx;
+  text-align: center;
+}

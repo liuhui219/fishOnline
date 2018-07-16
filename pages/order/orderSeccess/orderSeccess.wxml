@@ -1,0 +1,153 @@
+<view>
+  <view class='main'>
+    <view class='address'>
+      <view class='address_a' wx:if="{{address}}">
+        <button bindtap='buy' size="mini" style='line-height:3;'>新建地址</button>
+      </view>
+      <view class='address_b' wx:else>
+        <view>
+          <view class='name'>
+            <text style='margin-right:40rpx' class='text'>张三</text>
+            <text class='text color_333'>15525252525</text>
+          </view>
+          <view class='address_info'>
+            <text class='text color_777'>广东省深圳市南山区天利名城1808广东省深圳市南山区天利名城1808</text>
+          </view>
+        </view>
+        <view class='right'>
+          <text style='font-size:40rpx' class='iconfont icon-right color_333'></text>
+        </view>
+      </view>
+    </view>
+
+    <view class='pros'>
+      <view class='pro_company'>
+        <text class='text'>海之星</text>
+      </view>
+      <view class='pro_mark'>
+        <view class='pro_img'>
+
+        </view>
+
+        <view class='pro_mark_a'>
+          <view>
+            <text class='text26 titles'>海之星海之星海之星海之星海之星海之星海之星海之星海之星海之星海之星海之星海之星海之星</text>
+          </view>
+          <view class='pro_for'>
+            <view style='flex:1'>
+              <text class='text26 color_777'>规格：</text>
+            </view>
+
+            <view style='flex:1'>
+              <text class='text26 color_777'>等级：</text>
+            </view>
+          </view>
+
+
+          <view class='price'>
+            <view>
+              <text class='text26'>18</text>
+              <text class='text26'>元</text>
+            </view>
+            <view>
+              <text class='text26 color_777'>× 10</text>
+            </view>
+          </view>
+        </view>
+
+      </view>
+
+      <view class='pro_mark'>
+        <view class='pro_img'>
+
+        </view>
+
+        <view class='pro_mark_a'>
+          <view>
+            <text class='text26 titles'>海之星海之星海之星海之星海之星海之星海之星海之星海之星海之星海之星海之星海之星海之星</text>
+          </view>
+          <view class='pro_for'>
+            <view style='flex:1'>
+              <text class='text26 color_777'>规格：</text>
+            </view>
+
+            <view style='flex:1'>
+              <text class='text26 color_777'>等级：</text>
+            </view>
+          </view>
+
+
+          <view class='price'>
+            <view>
+              <text class='text26'>18</text>
+              <text class='text26'>元</text>
+            </view>
+            <view>
+              <text class='text26 color_777'>× 10</text>
+            </view>
+          </view>
+        </view>
+
+      </view>
+
+
+    </view>
+
+    <view class='other'>
+      <view class='pro_item'>
+        <text class='text'>支付配送</text>
+        <view class='select' bindtap='sent'>
+          <text class='text color_777'>{{mydata.title}}</text>
+          <text style='font-size:30rpx;margin-left:30rpx;padding-top:5rpx' class='iconfont icon-right color_333'></text>
+        </view>
+      </view>
+
+      <view class='pro_item'>
+        <text class='text'>留言：</text>
+        <view class='select_input'>
+          <input class='text26' style='margin-left:30rpx;flex:1' value="{{company}}" bindinput="bindCompany" placeholder="告诉卖家你的需求" />
+        </view>
+      </view>
+
+      <view class='pro_item'>
+        <text class='text'>发票</text>
+        <view class='select' bindtap='receipt'>
+          <text class='text color_777'>{{receipt.title}}</text>
+          <text style='font-size:30rpx;margin-left:30rpx;padding-top:5rpx' class='iconfont icon-right color_333'></text>
+        </view>
+      </view>
+
+      <view class='hp_price'>
+        <view class='hp_price_a'>
+          <view>
+            <text class='text'>货品总额</text>
+            <text class='text24 color_777'>(参考价)</text>
+          </view>
+          <text style='color:#FF3E3F' class='text'>20000</text>
+        </view>
+
+        <view class='hp_price_a'>
+          <view>
+            <text class='text'>运费</text>
+          </view>
+          <text style='color:#FF3E3F' class='text'>+ 20000</text>
+        </view>
+
+      </view>
+
+    </view>
+  </view>
+
+  <view class='foot'>
+    <view class='foot_price'>
+      <view>
+        <text class='text'>实付款</text>
+        <text class='text24 color_777'>(参考价)</text>
+      </view>
+      <text style='color:red' class='text'>2000</text>
+    </view>
+    <view class='submit'>
+      <text class='text color_fff'>提交订单</text>
+    </view>
+  </view>
+</view>

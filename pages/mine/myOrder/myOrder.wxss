@@ -1,0 +1,107 @@
+page{  
+  display: flex;  
+  flex-direction: column;  
+  height: 100%;  
+}  
+.navbar{  
+  flex: none;  
+  display: flex;  
+  background: #fff;  
+  border-bottom: 1px solid #f0f0f0;
+}  
+.navbar .item{  
+   color: #808080;  
+  font-size: 24rpx;
+  position: relative;  
+  flex: auto;  
+  text-align: center;  
+  line-height: 80rpx;  
+}  
+.navbar .item.active{  
+  font-size: 24rpx;
+  color: #808080;  
+}  
+.navbar .item.active:after{  
+ 
+  content: "";  
+  display: block;  
+  position: absolute;  
+  bottom: 0;  
+  left: 0;  
+  right: 0;  
+  height: 4rpx;  
+  background: #FFcc00;
+  
+}  
+.ItemOuterRoot{
+  flex-direction: column;
+}
+.InnerItemRootView{
+  display: flex;
+  flex-direction: row;
+}
+.topTitle{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-right: 30rpx;
+  margin-top: 10rpx;
+  padding-bottom: 15rpx;
+  border-bottom: 1px solid #f0f0f0;
+}
+.orderImg{
+  width: 150rpx;
+  height: 150rpx;
+  padding: 20rpx;
+}
+.RightItem{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction:column;
+  padding-top: 22rpx; 
+  padding-bottom: 22rpx;
+ 
+}
+.endText{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+.buttonStyle{
+  width:100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: center;
+}
+.TextButtonStyle{
+  width: 30%;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  margin-right: 45rpx;
+  border:1px solid #f0f0f0;
+  font-size: 28rpx;
+  color: #808080;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20rpx;
+}
+.TextButtonStyleTwo{
+  width: 30%;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  border:1px solid #f0f0f0;
+  font-size: 28rpx;
+  color: #808080;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20rpx;
+}

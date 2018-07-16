@@ -1,0 +1,66 @@
+<!--pages/order/sent/sent.wxml-->
+<view class='main'>
+  <view class='main_s'>
+    <view class='pays'>
+      <text class='text32'>支付方式</text>
+    </view>
+    <view class='pays' style='margin-top:30rpx'>
+      <radio value="" checked="true" />
+      <text style='margin-left:20rpx' class='text32'>银行转账</text>
+    </view>
+  </view>
+  <view style='height:30rpx;width:100%;background-color:#eee'></view>
+  <view class='main_s' >
+    <view class='pays'>
+      <text class='text32'>配送方式</text>
+    </view>
+    <view class='ps' style='margin-top:30rpx'>
+      <radio-group class="radio-group" bindchange="radioChange">
+        <label class="radio">
+          <radio value="上门自提" checked="{{sents}}" />
+          <text style='margin-left:20rpx' class='text32'>上门自提</text>
+        </label>
+
+        <label class="radio" style='margin-left:40rpx'>
+          <radio value="委托发货" checked="{{!sents}}" />
+          <text style='margin-left:20rpx' class='text32'>委托发货</text>
+        </label>
+      </radio-group>
+    </view>
+  </view>
+
+  <view class='input' wx:if="{{sents}}">
+    <view class='list'>
+      <text class='text30' style="width:200rpx">自提车辆</text>
+      <input class='text30' value="{{car}}" bindinput="bindCar" placeholder="请输入自提车辆" />
+    </view>
+    <view class='list'>
+      <text class='text30' style="width:200rpx">联系方式</text>
+      <input class='text30' type="number" value="{{phone}}" bindinput="bindPhone" placeholder="请输入联系方式" />
+    </view>
+    <view class='list'>
+      <text class='text30' style="width:200rpx">自提日期</text>
+      <picker class='text30' mode="date"  start="{{dates}}" end="2020-12-31" bindchange="bindDateChange" value="{{date}}">
+        <view class="picker">
+          {{date}}
+        </view>
+      </picker>
+    </view>
+  </view>
+
+  <view class='input' wx:else> 
+    <view class='list'>
+      <text class='text30' style="width:200rpx">发货日期</text>
+      <picker class='text30' mode="date"  start="{{dates}}" end="2020-12-31" bindchange="bindDateChange" value="{{date}}">
+        <view class="picker">
+          {{date}}
+        </view>
+      </picker>
+    </view>
+  </view>
+
+</view>
+
+<view class='foot' bindtap='sure'>
+   <text class='text'>确定</text>
+</view>

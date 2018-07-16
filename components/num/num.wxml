@@ -1,0 +1,11 @@
+<view class='nums'>
+   <view class='remove' bindtap='remove'>
+      <text>-</text>
+   </view>
+   <view class='input'>
+      <input class='text' value="{{values}}" type="number" bindinput="bindinput" bindblur="bindblur"  />
+   </view>
+   <view class='add' bindtap='add'>
+      <text>+</text>
+   </view>
+</view>

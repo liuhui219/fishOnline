@@ -1,0 +1,109 @@
+<view style='height:100%;' class='{{overflow}}'>
+  <view class='top'>
+    <view class='search' bindtap="search">
+      <icon type="search" size="14" />
+      <text style='color:#777;padding-left:20rpx;' class='text'>搜索货源</text>
+    </view>
+
+    <view class='Nav'>
+      <view class='Nav_list {{col1}}' bindtap="classTap">
+        <text class='text '>全部分类</text>
+        <text class='iconfont {{icon1}}'></text>
+      </view>
+      <view class='Nav_list {{col2}}' bindtap="classSort">
+        <text class='text'>价格排序</text>
+        <text class='iconfont {{icon2}}'></text>
+      </view>
+    </view>
+  </view>
+
+  <scroll-view scroll-y style='margin-top:160rpx'>
+    <view class='Pro_list' bindtap="detail">
+      <view class='Pro_list_co'>
+        <view class='Pro_list_pic'></view>
+        <view class='Pro_list_title'>
+          <text class='text26 titles'>金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼</text>
+          <text class='text26 color_777'>规格：</text>
+          <text class='text26 color_777'>等级：</text>
+          <text class='text26 color_777'>参考价：</text>
+        </view>
+      </view>
+    </view>
+    <view class='Pro_list' bindtap="detail">
+      <view class='Pro_list_co'>
+        <view class='Pro_list_pic'></view>
+        <view class='Pro_list_title'>
+          <text class='text26 titles'>金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼</text>
+          <text class='text26 color_777'>规格：</text>
+          <text class='text26 color_777'>等级：</text>
+          <text class='text26 color_777'>参考价：</text>
+        </view>
+      </view>
+    </view>
+    <view class='Pro_list' bindtap="detail">
+      <view class='Pro_list_co'>
+        <view class='Pro_list_pic'></view>
+        <view class='Pro_list_title'>
+          <text class='text26 titles'>金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼</text>
+          <text class='text26 color_777'>规格：</text>
+          <text class='text26 color_777'>等级：</text>
+          <text class='text26 color_777'>参考价：</text>
+        </view>
+      </view>
+    </view>
+    <view class='Pro_list' bindtap="detail">
+      <view class='Pro_list_co'>
+        <view class='Pro_list_pic'></view>
+        <view class='Pro_list_title'>
+          <text class='text26 titles'>金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼</text>
+          <text class='text26 color_777'>规格：</text>
+          <text class='text26 color_777'>等级：</text>
+          <text class='text26 color_777'>参考价：</text>
+        </view>
+      </view>
+    </view>
+    <view class='Pro_list' bindtap="detail">
+      <view class='Pro_list_co'>
+        <view class='Pro_list_pic'></view>
+        <view class='Pro_list_title'>
+          <text class='text26 titles'>金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼</text>
+          <text class='text26 color_777'>规格：</text>
+          <text class='text26 color_777'>等级：</text>
+          <text class='text26 color_777'>参考价：</text>
+        </view>
+      </view>
+    </view>
+    <view class='Pro_list' bindtap="detail">
+      <view class='Pro_list_co'>
+        <view class='Pro_list_pic'></view>
+        <view class='Pro_list_title'>
+          <text class='text26 titles'>金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼</text>
+          <text class='text26 color_777'>规格：</text>
+          <text class='text26 color_777'>等级：</text>
+          <text class='text26 color_777'>参考价：</text>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+
+
+  <view class='mask' bindtap="cancal" hidden="{{maskHidden}}" animation="{{opacity}}"></view>
+  <view class='classify' animation="{{animation}}">
+
+  </view>
+
+  <view class='sort' animation="{{animation1}}">
+    <view class='sort_list'>
+      <text class='text26'>默认排序</text>
+      <icon type="success_no_circle" color="#777" size="20" />
+    </view>
+    <view class='sort_list'>
+      <text class='text26'>价格从高到低</text>
+      <icon type="success_no_circle" color="#777" size="20" />
+    </view>
+    <view class='sort_list'>
+      <text class='text26'>价格从低到高</text>
+      <icon type="success_no_circle" color="#777" size="20" />
+    </view>
+  </view>
+</view>

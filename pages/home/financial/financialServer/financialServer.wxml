@@ -1,0 +1,12 @@
+<view>
+  <view class='financial'>
+    <text class='financial_text'>金融服务</text>
+    <image  style='width:200rpx;height:200rpx;margin-top:30rpx;' src="../../../images/logo.png" ></image>
+  </view>
+  <view class='list' bindtap="apply">
+     <view>
+        <text>帮你采</text>
+        <text>没钱，想买货？</text>
+     </view>
+  </view>
+</view>

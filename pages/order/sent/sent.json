@@ -1,0 +1,7 @@
+{
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#fff",
+  "enablePullDownRefresh": false,
+  "navigationBarTitleText": "选择配送方式",
+  "navigationBarTextStyle": "black"
+}

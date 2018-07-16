@@ -1,0 +1,11 @@
+{
+  "enablePullDownRefresh": false,
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText": "我的",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "waitSure": "../waitSure/waitSure",
+    "all": "../all/all"
+  }
+}

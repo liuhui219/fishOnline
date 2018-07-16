@@ -1,0 +1,43 @@
+<view>
+   <view class='list'>
+      <text class='text30' style="width:200rpx">公司名称</text>
+      <input class='text30' value="{{company}}" bindinput="bindCompany" placeholder="请输入公司名称" />
+   </view>
+
+   <view class='list'>
+      <text class='text30' style="width:200rpx">公司类型</text>
+      <radio-group class="radio-group" bindchange="radioChange">
+        <label class="text30" >
+          <radio class='text30' color="#036EB8" value="批发商" checked="true"/>批发商
+        </label>
+        <label class="text30" style='margin-left:30rpx' >
+          <radio class='text30' color="#036EB8" value="养殖户" />养殖户
+        </label>
+      </radio-group>
+   </view>
+   <view class='list'>
+      <text class='text30' style="width:200rpx">地址</text>
+      <picker class='text30' mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+        <view class="picker">
+          {{region[0]}}，{{region[1]}}，{{region[2]}}
+        </view>
+      </picker>
+   </view>
+   <view class='list'>
+      <text class='text30' style="width:200rpx">联系人</text>
+      <input class='text30' value="{{contacts}}" bindinput="bindContacts"  placeholder="请输入联系人"  />
+   </view>
+   <view class='list'>
+      <text class='text30' style="width:200rpx">手机号码</text>
+      <input class='text30' value="{{phone}}" bindinput="bindPhone" type="number" maxlength="11"  placeholder="请输入手机号码" />
+   </view>
+    
+   
+
+   <view wx:if="{{Issubmit}}" class='submit' style='background-color: #036EB8;'> 
+      <text class='text32' style='color:#fff'>提交</text>
+   </view>
+   <view wx:else class='submit'>
+      <text class='text32' style='color:#333'>提交</text>
+   </view>
+</view>

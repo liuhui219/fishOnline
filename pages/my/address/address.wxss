@@ -1,0 +1,99 @@
+/* pages/my/address/address.wxss */
+@import "../../../style/iconfont.wxss";
+
+.main {
+  height: 100%;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hasdata {
+  width: 100%;
+  height: 100%;
+  display: -webkit-flex;
+  flex-direction: column;
+}
+
+.mains {
+  height: 100%;
+  display: -webkit-flex;
+  flex-direction: column;
+}
+
+.main_a{
+  height:calc(100% - 100rpx);
+  overflow-x: hidden;
+}
+
+.right {
+  display: -webkit-flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 200rpx;
+}
+
+.address_b {
+  display: -webkit-flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  justify-content: space-between;
+  padding: 40rpx;
+  border-bottom: 1rpx solid #eee;
+}
+
+.titles {
+  overflow: hidden;
+  color: #333;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-height: 40rpx;
+  -webkit-box-orient: vertical;
+}
+
+.setting {
+  display: -webkit-flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.address_info {
+  display: -webkit-flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.change{
+   display: -webkit-flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+
+.foot{
+  position: fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  height:100rpx;
+   display: -webkit-flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccc;
+}

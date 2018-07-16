@@ -1,0 +1,7 @@
+{
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#fff",
+  "enablePullDownRefresh": false,
+  "navigationBarTitleText": "发票",
+  "navigationBarTextStyle": "black"
+}

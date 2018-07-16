@@ -1,0 +1,45 @@
+<!--pages/my/address/address.wxml-->
+<view class='main' wx:if="{{isAddress}}">
+  <view class='title'>
+    <text class='text'>
+        暂时没有收货地址
+     </text>
+    <button bindtap='buy' size="mini" style='margin-top:30rpx;line-height:3;'>去添加</button>
+  </view>
+</view>
+
+<view class='mains'>
+  <view class='main_a'>
+    <view class='address_b'>
+      <view>
+        <view class='name'>
+          <text style='margin-right:40rpx' class='text'>张三</text>
+          <text class='text color_333'>15525252525</text>
+        </view>
+        <view style='line-height:34rpx;margin-top:20rpx'>
+          <text class='text color_777'>广东省深圳市南山区天利名城1808广东省深圳市南山区天利名城1808</text>
+        </view>
+        <view class='address_info' style='line-height:34rpx;margin-top:30rpx'>
+          <view class='setting'>
+            <text style='font-size:40rpx;' class='iconfont icon-circle color_777'></text>
+            <text class='text color_777' style='margin-left:10rpx;'>设为默认</text>
+          </view>
+          <view class='change'>
+            <view class='setting'>
+              <text style='font-size:40rpx;' class='iconfont icon-edit color_777'></text>
+              <text style='margin-left:10rpx;' class='text color_777'>编辑</text>
+            </view>
+            <view class='setting' style='margin-left:20rpx;'>
+              <text style='font-size:40rpx;' class='iconfont icon-iconfontshanchu1 color_777'></text>
+              <text style='margin-left:10rpx;' class='text color_777'>删除</text>
+            </view>
+          </view>
+        </view>
+      </view>
+
+    </view>
+  </view>
+  <view class='foot' bindtap='add'>
+    <text class='text'>新增收货地址</text>
+  </view>
+</view>

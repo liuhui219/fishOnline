@@ -1,0 +1,138 @@
+<view style='  flex-direction: column'>
+  <view class='titleText'>
+      <text>待确定</text>
+      <view style='flex-direction: row'>
+        <text>付款时间还剩</text>
+        <text style='color:#ff0000'>2时59分59秒</text>
+      </view>    
+  </view>
+  <view class='locationInfo'>
+    <text>张三  15555555555</text>
+    <text>转账转账绘制花枝招展</text>
+  </view>
+  <view class='companyItemTitle'>
+      <text style='font-size:28rpx;margin-left:20rpx'>海之星水产公司</text>
+      <view style='display:flex;flex-direction: row;  justify-content: center'>
+         <button class='itemButtonStyle' plain='true'>客服消息</button>
+        <button class='itemButtonStyle' plain='true'>拨打热线</button> 
+      </view>
+  </view>
+
+  <block wx:for="{{orderContent}}"  wx:key="index">
+              <view class="InnerItemRootView" >
+                  <image class="orderImg" src="{{userInfo.itemPic}}" background-size="cover"/>
+                  <view wx:if="{{index!=(orderContent.length-1)}}" class="RightItem">
+                    <text style='font-size:24rpx;color:#808080'>{{item.title}}</text>
+                    <view style="flex-direction:row;">
+                      <text style="font-size:20rpx;color:#808080">规格: {{item.sizeT}}</text>
+                       <text style='margin-left: 30rpx;font-size:20rpx;color:#808080'>等级: {{item.level}}</text>
+                    </view>
+                    <view style='flex-direction: row;display:flex;'>
+                      <text style='font-size:24rpx;color:#ff0000'>{{item.price}}</text>
+                      <text style='font-size:24rpx;color:#808080' wx:if="{{item.price - item.price == 0}}">元/斤X{{item.count}}</text>
+                      <text style='font-size:24rpx;color:#808080' wx:else>X{{item.count}}</text>
+                    </view>
+                  </view>
+                   <view wx:else class="RightItemEnd">
+                    <text style='font-size:24rpx;color:#808080'>{{item.title}}</text>
+                    <view style="flex-direction:row;">
+                      <text style="font-size:20rpx;color:#808080">规格: {{item.sizeT}}</text>
+                       <text style='margin-left: 30rpx;font-size:20rpx;color:#808080'>等级: {{item.level}}</text>
+                    </view>
+                    <view style='flex-direction: row;display:flex;'>
+                      <text style='font-size:24rpx;color:#ff0000'>{{item.price}}</text>
+                      <text style='font-size:24rpx;color:#808080' wx:if="{{item.price - item.price == 0}}">元/斤X{{item.count}}</text>
+                      <text style='font-size:24rpx;color:#808080' wx:else>X{{item.count}}</text>
+                    </view>
+                  </view>
+              </view>
+    </block>
+
+    <view class='payInfo'>
+      <view style='width:100%;display: flex;justify-content: space-between;align-items: flex-start;flex-direction:row;'>
+        <text style="font-size:24rpx">货品总价</text>
+        <text style='color:#ff0000;font-size:24rpx'>待确认</text>
+      </view>
+      <view style='width:100%;display: flex;justify-content: space-between;align-items: flex-start;flex-direction:row;'>
+        <text style="font-size:24rpx">货品总价</text>
+        <text style='color:#ff0000;font-size:24rpx'>待确认</text>
+      </view>
+      <view style='width:100%;display: flex;justify-content: space-between;align-items: flex-start;flex-direction:row;'>
+        <text style="font-size:24rpx">货品总价</text>
+        <text style='color:#ff0000;font-size:24rpx'>待确认</text>
+      </view>
+    </view>
+      <view style='width:100%;display: flex;justify-content: flex-start;align-items: center;flex-direction:row;margin-left:20rpx;height:80rpx'>
+        <text style="font-size:24rpx">留言:</text>
+        <text style='font-size:24rpx;margin-left:20rpx'>1111</text>
+      </view>
+    
+      <view class='payInfo'>
+      <view style='width:100%;display: flex;justify-content: space-between;align-items: flex-start;flex-direction:row;'>
+        <text style="font-size:24rpx">订单号</text>
+        <text style='font-size:24rpx'>6666666666666</text>
+      </view>
+      <view style='width:100%;display: flex;justify-content: space-between;align-items: flex-start;flex-direction:row;'>
+        <text style="font-size:24rpx">下单时间</text>
+        <text style='font-size:24rpx'>2017-12-12 22.22.33</text>
+      </view>
+    </view>
+      <view style='width:100%;display: flex;align-items: center;flex-direction:column'>
+           <view style='width:100%;display: flex;justify-content: flex-start;align-items: center;flex-direction:row;height:80rpx'>
+            <text style="font-size:24rpx;margin-left:20rpx">支付方式:</text>
+            <text style='font-size:24rpx;margin-left:20rpx'>银行转账</text>
+          </view>
+          <view  wx:if="{{1==2}}" style='width:100%;display: flex;align-items: flex-end;flex-direction:column'>
+             <view  style='width:100%;display: flex;align-items: center;flex-direction:row;'>
+                 <image style='width:30vw;height:30vw;margin-left:20rpx' src="/pages/images/a3.jpg" background-size="cover"/>
+                 <image style='width:30vw;height:30vw' src="/pages/images/a3.jpg" background-size="cover"/>
+                 <image style='width:30vw;height:30vw' src="/pages/images/a3.jpg" background-size="cover"/>
+              </view>
+              <text style='color:#ff0000;justify-content: flex-end;margin-top:10rpx;margin-right:30rpx'>更多》</text>
+
+
+          </view>
+         
+
+      </view>
+      
+
+
+    
+    <view class='payInfo'>
+      <view style='width:100%;display: flex;justify-content: flex-start;align-items: flex-start;flex-direction:row;'>
+        <text style="font-size:24rpx">货品总价:</text>
+        <text style='color:#ff0000;font-size:24rpx;margin-left:20rpx'>待确认</text>
+      </view>
+      <view style='width:100%;display: flex;justify-content: flex-start;align-items: flex-start;flex-direction:row;'>
+         <text style="font-size:24rpx">货品总价:</text>
+        <text style='color:#ff0000;font-size:24rpx;margin-left:20rpx'>待确认</text>
+      </view>
+      <view style='width:100%;display: flex;justify-content: flex-start;align-items: flex-start;flex-direction:row;'>
+         <text style="font-size:24rpx">货品总价:</text>
+        <text style='color:#ff0000;font-size:24rpx;margin-left:20rpx'>待确认</text>
+      </view>
+      <view style='width:100%;display: flex;justify-content: flex-start;align-items: flex-start;flex-direction:row;'>
+        <text style="font-size:24rpx">货品总价:</text>
+        <text style='color:#ff0000;font-size:24rpx;margin-left:20rpx'>待确认</text>
+      </view>
+      <view style='width:100%;display: flex;justify-content: flex-start;align-items: flex-start;flex-direction:row;'>
+         <text style="font-size:24rpx">货品总价:</text>
+        <text style='color:#ff0000;font-size:24rpx;margin-left:20rpx'>待确认</text>
+      </view>
+      <view style='width:100%;display: flex;justify-content: flex-start;align-items: flex-start;flex-direction:row;'>
+         <text style="font-size:24rpx">货品总价:</text>
+        <text style='color:#ff0000;font-size:24rpx;margin-left:20rpx'>待确认</text>
+      </view>
+      <view style='width:100%;display: flex;justify-content: flex-start;align-items: flex-start;flex-direction:row;'>
+         <text style="font-size:24rpx">货品总价:</text>
+        <text style='color:#ff0000;font-size:24rpx;margin-left:20rpx'>待确认</text>
+      </view>
+    </view>  
+
+      <view style='width:100%;display: flex;justify-content: space-between;align-items: center;flex-direction:row;20rpx;height:80rpx'>
+        <text style="font-size:24rpx;margin-left:20rpx">应付款(含运费):</text>
+        <text style='color:#ff0000;font-size:24rpx;margin-right:80rpx'>待确定</text>
+      </view>
+    <button style='width=100%;margin-bottom:20rpx;align-item:center;margin-top:80rpx' plain='true'>关闭交易</button>
+</view>

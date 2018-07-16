@@ -1,0 +1,73 @@
+<scroll-view scroll-y class='main'>
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <view wx:for="{{imgUrls}}" wx:key="index" bindtap='img'>
+      <swiper-item>
+        <image src="{{item}}" data-list="{{imgUrls}}" data-src="{{item}}" style="width:100%;" />
+      </swiper-item>
+    </view>
+  </swiper>
+  <view class='detail_depict'>
+    <view class='detail_title'>
+      <text class='text32'>金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金</text>
+    </view>
+    <view class='detail_format'>
+      <text style='flex:1' class='text color_777'>规格：</text>
+      <text style='flex:1' class='text color_777'>等级：</text>
+    </view>
+    <view class='detail_format'>
+      <text style='flex:1' class='text color_777'>起批量：</text>
+      <text style='flex:1' class='text color_777'>交易地点：</text>
+    </view>
+    <view style='margin-top:40rpx;' class='detail_format'>
+      <text style='flex:1' class='text'>参考价：</text>
+    </view>
+  </view>
+  <view class='detail_sq'>
+    <view>
+      <text class='text color_333'>资金周转有压力？鱼在线帮你买</text>
+    </view>
+    <view class='btn'>
+      <button size="mini" open-type="contact">立即申请</button>
+    </view>
+  </view>
+
+</scroll-view>
+<view class='foot'>
+  <view class='btns'></view>
+  <view class='btns'>
+    <view class='add' style='background-color:#026EB7' bindtap='add'>
+      <text class='text color_fff'>加进货单</text>
+    </view>
+    <view class='add' style='background-color:#FF3D3D'>
+      <text class='text color_fff'>立即购买</text>
+    </view>
+  </view>
+
+</view>
+
+<view class='mask' bindtap="cancal" hidden="{{maskHidden}}" animation="{{opacity}}"></view>
+
+<view class='buy' animation="{{animation}}">
+  <view class='buy_num'>
+    <view class='Pro_list' bindtap="detail">
+      <view class='Pro_list_co'>
+        <view class='Pro_list_pic'></view>
+        <view class='Pro_list_title'>
+          <text class='text26 titles'>金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼金枪鱼</text>
+          <text class='text26 color_777'>参考价：</text> 
+        </view>
+      </view>
+      <view class='num'>
+         <view>
+           <text class='text'>300-400克</text>
+         </view>
+         <view>
+           <num id='num' values="{{number}}" bind:bindblur="bindblur" bind:bindinput="bindinput" bind:add="adds" bind:remove="remove"></num>
+         </view>
+      </view>
+    </view>
+  </view>
+  <view class='sure'>
+    <text class='text32'>确定</text>
+  </view>
+</view>

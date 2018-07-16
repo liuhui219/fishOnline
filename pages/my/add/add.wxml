@@ -1,0 +1,25 @@
+<view>
+  <view class='list'>
+      <text class='text30' style="width:200rpx">收货人</text>
+      <input class='text30' value="{{company}}" bindinput="bindCompany" placeholder="请输入收货人" />
+   </view>
+   <view class='list'>
+      <text class='text30' style="width:200rpx">手机号码</text>
+      <input class='text30' value="{{company}}" bindinput="bindCompany" placeholder="请输入手机号码" />
+   </view>
+   <view class='list'>
+      <text class='text30' style="width:200rpx">所在地区</text>
+      <picker class='text30' mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+        <view class="picker">
+          {{region[0]}}，{{region[1]}}，{{region[2]}}
+        </view>
+      </picker>
+   </view>
+   <view class='list' style='align-items:flex-start'>
+      <text class='text30' style="width:200rpx">详细地址</text>
+      <textarea style="flex:1" class='text30' auto-height placeholder="请输入详细地址" />
+   </view>
+</view>
+<view class='foot'>
+<text class='text'>保存</text>
+</view>

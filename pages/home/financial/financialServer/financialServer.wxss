@@ -1,0 +1,25 @@
+/* pages/home/financial/financialServer/financialServer.wxss */
+page{
+  background-color: #fff;
+}
+.financial{
+  background-color: #fff;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30rpx;
+}
+.financial_text{
+  font-size: 40rpx;
+  font-weight: 600;
+  letter-spacing: 4rpx;
+}
+.list{
+   box-sizing:border-box;
+   margin-left: 20rpx;
+   margin-right: 20rpx;
+   border-radius: 10rpx;
+   padding: 20rpx;
+   background-color: #eee;
+}

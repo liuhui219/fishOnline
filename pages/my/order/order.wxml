@@ -1,0 +1,52 @@
+<view class="stv-container">
+  <view class="tab-bar">
+    <view wx:for="{{tabs}}" wx:key="unique" data-index="{{index}}" bindtap="handlerTabTap" class="tab {{activeTab==index?'tab-active':''}}" style="width: {{stv.windowWidth/tabs.length}}px">
+      <text>{{item}}</text>
+    </view>
+    <view style="width: {{stv.lineWidth-30}}px; left: {{stv.offset/tabs.length+15}}px" class="under-line {{!stv.tStart? 'withAnimate': ''}}"></view>
+  </view>
+  <view class="scroll-view">
+    <view bindtouchstart="handlerStart" catchtouchmove="handlerMove" bindtouchcancel="handlerCancel" bindtouchend="handlerEnd" class="scroll-view-wrapper {{!stv.tStart? 'withAnimate': ''}}" style="left: -{{stv.offset}}px">
+      <view style="width: {{stv.windowWidth}}px;margin-top:2rpx;" class="one-scene">
+        <scroll-view style="height:100%" scroll-y wx:if="{{fir}}">
+          <all  />
+        </scroll-view>
+        <scroll-view style="height:100%" scroll-y wx:else>
+           
+        </scroll-view>
+      </view>
+      <view style="width: {{stv.windowWidth}}px;margin-top:2rpx;" class="one-scene">
+        <scroll-view style="height:100%" scroll-y wx:if="{{sec}}">
+          <waitSure  />
+        </scroll-view>
+        <scroll-view style="height:100%" scroll-y wx:else>
+           
+        </scroll-view>
+      </view>
+      <view style="width: {{stv.windowWidth}}px;margin-top:2rpx;" class="one-scene">
+        <scroll-view style="height:100%" scroll-y wx:if="{{fir}}">
+          <all  />
+        </scroll-view>
+        <scroll-view style="height:100%" scroll-y wx:else>
+           
+        </scroll-view>
+      </view>
+      <view style="width: {{stv.windowWidth}}px;margin-top:2rpx;" class="one-scene">
+        <scroll-view style="height:100%" scroll-y wx:if="{{fir}}">
+          <all  />
+        </scroll-view>
+        <scroll-view style="height:100%" scroll-y wx:else>
+           
+        </scroll-view>
+      </view>
+      <view style="width: {{stv.windowWidth}}px;margin-top:2rpx;" class="one-scene">
+        <scroll-view style="height:100%" scroll-y wx:if="{{fir}}">
+          <all  />
+        </scroll-view>
+        <scroll-view style="height:100%" scroll-y wx:else>
+           
+        </scroll-view>
+      </view>
+    </view>
+  </view>
+</view>

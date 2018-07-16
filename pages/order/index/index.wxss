@@ -1,0 +1,158 @@
+/* pages/order/index/index.wxss */
+@import "../../../style/iconfont.wxss";
+
+.nodata {
+  width: 100%;
+  height: 100%;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hasdata {
+  width: 100%;
+  height:100%;
+  display: -webkit-flex;
+  flex-direction: column;
+}
+
+.main{ 
+  width: 100%;
+  height:calc(100% - 100rpx);
+}
+
+.pro_title {
+  display: -webkit-flex;
+  flex-direction: row;
+  height: 100rpx;
+  flex: 1;
+  align-items: center;
+}
+
+.pro_icon {
+  display: -webkit-flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+
+.pro_company {
+  display: -webkit-flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  flex: 1;
+  height: 100rpx;
+  border-bottom: 1rpx solid #eee;
+}
+
+.pro_list {
+  display: -webkit-flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+}
+
+.pro_mark{
+  display: -webkit-flex;
+  flex: 1;
+  flex-direction: row;
+}
+
+.pro_img{
+  width:180rpx;
+  height:180rpx;
+  background-color: #eee;
+}
+
+.pro_mark_a{
+  display: -webkit-flex;
+  flex-direction:column;
+  flex: 1;
+  justify-content:space-between;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}
+
+.titles{
+  overflow : hidden;
+  color: #333;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-height: 40rpx;
+  -webkit-box-orient: vertical;
+}
+
+.pro_price{
+  display: -webkit-flex;
+  flex-direction:row; 
+  justify-content:space-between;
+  padding-right: 40rpx; 
+  padding-top: 20rpx;
+}
+
+.num_re{
+  display: -webkit-flex;
+  flex-direction:row; 
+}
+
+.remove{
+  display: -webkit-flex;
+  flex-direction:row; 
+  justify-content: center;
+  align-items: center;
+  margin-left: 50rpx;
+  width:40rpx;
+}
+
+.price{
+  display: -webkit-flex;
+  flex-direction:row; 
+  justify-content: center;
+  align-items: center;
+}
+
+.foot{
+   display: -webkit-flex;
+  flex-direction:row; 
+  position: fixed;
+  bottom:0;
+  left:0;
+  height:100rpx;
+  width:100%;
+  background-color: #ccc;
+}
+
+.foot_num{
+  display: -webkit-flex;
+  flex-direction:row; 
+  justify-content: center;
+  align-items: center;
+  flex:1;
+  width:calc(100% - 200rpx);
+  height:100rpx;
+}
+
+.xd{
+  display: -webkit-flex;
+  flex-direction:row; 
+  justify-content: center;
+  align-items: center;
+  height:100rpx;
+  width:200rpx;
+  background-color: red;
+}

@@ -1,0 +1,71 @@
+<view class='nodata' wx:if="{{data.length == 0}}">
+  <view class='title'>
+    <text class='text'>
+        按时没有添加货品
+     </text>
+    <button bindtap='buy' size="mini" style='margin-top:30rpx;line-height:3;'>去采购</button>
+  </view>
+</view>
+<view wx:else class='hasdata'>
+  <view class='main'>
+    <view class='pro_title'>
+      <view class='pro_icon'>
+        <text style='font-size:46rpx;' class='iconfont icon-circle color_777'></text>
+
+      </view>
+      <view class='pro_company'>
+        <text class='text32'>海之星</text>
+      </view>
+    </view>
+    <view class='pro_list'>
+      <view style='padding-left:30rpx;padding-right:30rpx;'>
+        <text style='font-size:46rpx;' class='iconfont icon-circle color_777'></text>
+
+      </view>
+      <view style='display: -webkit-flex;flex-direction:column;'>
+        <view class='pro_mark'>
+          <view class='pro_img'>
+
+          </view>
+
+          <view class='pro_mark_a'>
+            <view>
+              <text class='text titles'>海之星海之星海之星海之星海之星海之星海之星海之星海之星海之星海之星海之星海之星海之星</text>
+            </view>
+
+            <view>
+              <text class='text26 color_777'>规格：</text>
+            </view>
+
+            <view>
+              <text class='text26 color_777'>等级：</text>
+            </view>
+          </view>
+        </view>
+        <view class='pro_price'>
+          <view class='price'>
+            <text class='text'>1000</text>
+            <text class='text'>元</text>
+          </view>
+          <view class='num_re'>
+            <view>
+              <num id='num' values="{{number}}" bind:bindblur="bindblur" bind:bindinput="bindinput" bind:add="adds" bind:remove="remove"></num>
+            </view>
+            <view class='remove' bindtap="removepro">
+              <text style='font-size:50rpx;' class='color_777 iconfont icon-close'></text>
+            </view>
+          </view>
+        </view>
+      </view>
+
+
+    </view>
+  </view>
+  <view class='foot'>
+    <view class='foot_num'>
+    </view>
+    <view class='xd' bindtap='order'>
+      <text class='text color_fff'>下单</text>
+    </view>
+  </view>
+</view>
